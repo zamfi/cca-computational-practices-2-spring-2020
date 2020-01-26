@@ -1,5 +1,5 @@
 # Learning JSON by example!
-## by Rolf Widenfelt  (Spring - January 2020)
+### _by Rolf Widenfelt  (Spring - January 2020)_
 
 
 ## Some simple examples of JSON
@@ -16,9 +16,9 @@
 {"pi": 3.14159265358979 }
 ```
 
-Note: These are all JSON "Objects". Remember, each one is a pair surrounded by curly braces ({}).
+Note: These are all JSON "Objects". Remember, each one is a pair surrounded by curly braces (**{}**).
  
-* the first term ALWAYS needs quotes
+* the first term **always** needs quotes
 * numbers and certain special words (true, false, null) do not need quotes!
 * but everything else needs quotes.
 
@@ -31,7 +31,7 @@ Note: These are all JSON "Objects". Remember, each one is a pair surrounded by c
 {"school" : "CCA" : "famous"}
 ```
 
-The above examples are all "Objects". We can also have "Arrays".
+The above examples are all _Objects_. We can also have _Arrays_.
 
 ## Some examples of Arrays in JSON
 
@@ -48,7 +48,7 @@ The above examples are all "Objects". We can also have "Arrays".
 ]
 ```
 
-Remember, each one is a list of things (as many as you want) surrounded by square brackets ([]).
+Remember, each one is a list of things (as many as you want) surrounded by square brackets (**[]**).
 Do you think you can put an Array inside an Object?
 Yes you can!
 
@@ -58,5 +58,5 @@ Yes you can!
 
 That's it.
 You now understand the basics of JSON.
-Feel free to make up your own examples and try them in the free online editor: (https://jsoneditoronline.org/)
+Feel free to make up your own examples and try them in the free online editor: <https://jsoneditoronline.org/>
 
