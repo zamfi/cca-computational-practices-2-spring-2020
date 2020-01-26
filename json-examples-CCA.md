@@ -1,5 +1,5 @@
 # Learning JSON by example!
-# by Rolf Widenfelt  (Jan 2020)
+## by Rolf Widenfelt  (Spring - January 2020)
 
 
 ## Some simple examples of JSON
