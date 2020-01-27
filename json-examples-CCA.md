@@ -1,6 +1,7 @@
-# Learning JSON by example!
-### _by Rolf Widenfelt  (Spring - January 2020)_
+# Learning JSON by Example!
+#### Computational Practices 2, Spring 2020
 
+---
 
 ## Some simple examples of JSON
 
@@ -60,3 +61,6 @@ That's it.
 You now understand the basics of JSON.
 Feel free to make up your own examples and try them in the free online editor: <https://jsoneditoronline.org/>
 
+A more formal definition of JSON can be found here: <https://www.json.org/json-en.html>
+
+_by Rolf Widenfelt - January 2020_
