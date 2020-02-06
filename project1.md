@@ -30,7 +30,27 @@ Next, I want you to make a change to the [YOLO - webcam](https://editor.p5js.org
 
 In class, we explored the [Posenet webcam](http://editor.p5js.org/ml5/sketches/cO4CGs7nGpt) sketch and modified it to perform the same action as YOLO -- hiding the video and displaying text when a person is detected, and changing that text if two or more people are detected.
 
-Then, we deconstructed and wrote code for the simplest possible Pong game: two paddles and a ball that bounces between them, using the `mouseY` variable to control, and then *merged* that code into the Posenet webcam sketch. 
+Then, we deconstructed and wrote code for the simplest possible Pong game: two paddles and a ball that bounces between them, using the `mouseY` variable to control, based on this deconstruction:
+
+Data | Render | Simulation | User Events
+-----|--------|------------|------------
+`x`, `y` for ball | draw left paddle | move ball | mouseY -> paddle positions (both)
+`vx`, `vy` for ball | draw right paddle | bounce ball on top/bottom walls |
+`leftPaddle` (y) | draw ball | bounce ball and check paddle hits |
+`rightPaddle` (y) |          | |
+
+Finally, we *merged* that code into [this Posenet webcam sketch](posepong-starter.js). (Note: this code won't work if you just paste it into a new p5.js editor. Instead, follow the link to the [Posenet webcam sketch](http://editor.p5js.org/ml5/sketches/cO4CGs7nGpt) and paste the PosePong code into there.
+
+With that done, we modified the code to set `leftPaddle = rightPaddle = poses[0].pose.nose.y`, where `poses[0].pose.nose.y` is the y-position of the first person found by Posenet. (We also enclosed that assignment in an `if` statement with the condition `poses.length >= 1`!)
+
+In this week's and next week's homework assignments, we'll ask you to continue working on PosePong.
+
+ - **Assignment**: Make two-player pong work! The easy way to get started is to update your `if` statement condition to `poses.length == 2` and then assume `poses[0]` is the person on the left and `poses[1]` is the person on the right, and then use each pose's `.pose.nose.y` property to set either `leftPaddle` (for pose 0) or `rightPaddle` (for pose 1). 
+   But our left/right assumption isn't necessarily valid! It could be that Posenet finds the right person first, and the left person second, and thus the order in the `poses` array will be backwards. One way to address this is to first figure out which of `poses[0]` or `poses[1]` has the nose on the left side, and which is on the right side (more `if` statements, this time checking `.x` against `width/2` perhaps?), and then setting `leftPaddle` or `rightPaddle` as appropriate. Try this.
+   
+ - **Assignment**: Add scoring!
+ 
+ - **Challenge**: One can only imagine that two people playing this game in a public space will attract spectators -- spectators that will also be recognzied as people by Posenet! Suddenly, our `poses.length == 2` condition will no longer be true. How can we only ...
 
 <!-- **Assignment**: This week, for homework, further modify the YOLO example to use position information as an input. Take one of the [p5.js examples](https://p5js.org/examples/) that relies on user input of some form -- mouse, keyboard, etc. -- and modify it to use the position of your body as that input instead. You'll need to do some merging of code, and I'd recommend you merge the example code into the YOLO code instead of the other way around.
 
