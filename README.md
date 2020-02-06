@@ -9,7 +9,7 @@ In this course, we'll engage in three mini-projects and a final project.
 2. Learn about JSON, aka "JavaScript Object Notation". It's a very useful way to structure data and you will come across it a lot, including in Project 1! First, take a look at some examples [here](json-examples-CCA.md). There are also a number of resources on YouTube and across the Web, but many of them will have parts that assume knowledge beyond what you have gained so far -- do not fret! Get what you can from each one, and move on. The pieces will fit together!
 3. Copy the JSON data from [this document](runner.json?raw=1) into [JSON Editor Online](https://jsoneditoronline.org) and/or [JSONFormatter](https://www.jsonformatter.io), and explore what data actually shows up in there. Explore enough that you have an educated guess about the "position" of the "nose".
 
-Project 1: Machine Learning. *January 29 - February 19.*
+Project 1: [Machine Learning](project1.md). *January 29 - February 19.*
 
 Project 2: JavaScript, React, and the Web. *February 19 - March 11.*
 
