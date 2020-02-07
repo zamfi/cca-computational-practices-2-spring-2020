@@ -46,18 +46,18 @@ With that done, we modified the code to set `leftPaddle = rightPaddle = poses[0]
 In this week's and next week's homework assignments, we'll ask you to continue working on PosePong.
 
  - **Assignment**: Make two-player pong work! The easy way to get started is to update your `if` statement condition to `poses.length == 2` and then assume `poses[0]` is the person on the left and `poses[1]` is the person on the right, and then use each pose's `.pose.nose.y` property to set either `leftPaddle` (for pose 0) or `rightPaddle` (for pose 1). 
+   
    But our left/right assumption isn't necessarily valid! It could be that Posenet finds the right person first, and the left person second, and thus the order in the `poses` array will be backwards. One way to address this is to first figure out which of `poses[0]` or `poses[1]` has the nose on the left side, and which is on the right side (more `if` statements, this time checking `.x` against `width/2` perhaps?), and then setting `leftPaddle` or `rightPaddle` as appropriate. Try this.
    
- - **Assignment**: Add scoring!
+ - **Assignment**: Add scoring to your pong game! You'll need a couple more pieces of data (scores!) and rendering (drawing the scores!), and you'll need to update the simulation so that when the ball misses a paddle, you update the score and then somehow reset the game state (i.e., move the ball back to a starting position). 
+   
+   Very conveniently, the code you're working from already has a `// game over` comment right where it detects a paddle miss!
  
- - **Challenge**: One can only imagine that two people playing this game in a public space will attract spectators -- spectators that will also be recognzied as people by Posenet! Suddenly, our `poses.length == 2` condition will no longer be true. How can we only ...
+ - **Challenge**: One can only imagine that two people playing this game in a public space will attract spectators -- spectators that will also be recognzied as people by Posenet! Suddenly, our `poses.length == 2` condition will no longer be true. How can we identify and use the pose data of the two people closest to the camera?
+   
+   One possibility is to use the distance between each detected pose's eyes to find the two poses "closest" (at least, ignoring differences in inter-eye distance between people) to the camera, and then pick left/right based on position as you did above. But there are other ways as well!
 
-<!-- **Assignment**: This week, for homework, further modify the YOLO example to use position information as an input. Take one of the [p5.js examples](https://p5js.org/examples/) that relies on user input of some form -- mouse, keyboard, etc. -- and modify it to use the position of your body as that input instead. You'll need to do some merging of code, and I'd recommend you merge the example code into the YOLO code instead of the other way around.
-
-This exercise might be on the tricky side -- feel free to work with others in the class and [email me](mailto:zamfi@cca.edu) a single assignment, but make sure to credit your partners in your submission.
--->
-
-Please reach out by email or on Slack if you're stuck!
+As always, upload your code to GitHub and [email it to us](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) -- and please reach out by email or on Slack if you're stuck!
 
 <!--
 ### Week 3
