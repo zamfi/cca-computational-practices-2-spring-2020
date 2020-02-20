@@ -71,7 +71,7 @@ class App extends Component {
 export default App;
 ```
 
-Paste this code into a new, fresh "React Sandbox" at [codesandbox.io](codesandbox.io).
+Paste this code into a new, fresh "React Sandbox" at [codesandbox.io](http://codesandbox.io).
 
 <!--
 
