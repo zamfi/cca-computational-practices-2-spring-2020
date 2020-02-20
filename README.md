@@ -1,6 +1,6 @@
 # Computational Practices 2, Spring 2020
 
-This course repository contains homework assignments, useful guides, and code for Computational Practices 2 at CCA, Fall 2019.
+This course repository contains homework assignments, useful guides, and code for Computational Practices 2 at CCA, Spring 2020.
 
 In this course, we'll engage in three mini-projects and a final project.
 
@@ -11,7 +11,7 @@ In this course, we'll engage in three mini-projects and a final project.
 
 Project 1: [Machine Learning](project1.md). *January 29 - February 19.*
 
-Project 2: JavaScript, React, and the Web. *February 19 - March 11.*
+Project 2: [JavaScript, React, and the Web](project2.md). *February 19 - March 11.*
 
 Project 3: Electronics and Robotics. *March 11 - April 8.*
 
