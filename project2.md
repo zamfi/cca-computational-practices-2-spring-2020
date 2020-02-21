@@ -73,13 +73,12 @@ export default App;
 
 Paste this code into a new, fresh "React Sandbox" at [codesandbox.io](http://codesandbox.io).
 
-<!--
 
 #### Homework 1
 
 This week's homework is to continue the exercises from class:
 
-1. Add some extra pages to the Choose-your-own-Adventure
+1. Extend your Choose-your-own-Adventure to include at least 10 pages and a reasonable narrative.
 
 2. Add images to your pages.
 
@@ -87,7 +86,9 @@ This week's homework is to continue the exercises from class:
 
 4. Learn a bit of CSS and style things! Make them pretty!
 
-Submit your homework by exporting your project to GitHub by clicking on the GitHub icon (Octocat thing), then [emailing me](mailto:zamfi@cca.edu) the link to your GitHub repository.
+Submit your homework by exporting your project to GitHub by clicking on the GitHub icon (Octocat thing), then [emailing us](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) both a link to your GitHub repository and a link to your published CodeSandbox.
+
+<!--
 
 [Here's a solution to buttons question that uses arrays](cyoa-buttons.js)
 
