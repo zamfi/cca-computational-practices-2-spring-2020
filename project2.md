@@ -82,7 +82,7 @@ This week's homework is to continue the exercises from class:
 
 2. Add images to your pages.
 
-3. **Challenge**: add the ability to specify up to five buttons per page. Bonus points for an arbitrary number! *Hint*: try using `if` statements in the `render()` function? Or, an array of buttons?
+3. Add the ability to specify up to three buttons per page. *Hint*: try using `if` statements in the `render()` function, [as we did in class for the `<img>` tag](optiona-images.js). **Bonus challenge:** enable the ability to specify as many buttons as you want! Perhaps with an array of buttons?
 
 4. Learn a bit of CSS and style things! Make them pretty!
 
