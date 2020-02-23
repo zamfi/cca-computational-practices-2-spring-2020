@@ -41,7 +41,7 @@ class App extends Component {
 
     var imageElement = "";
     if (pageData.image) {
-      imageElement = <img src={pageData.image} width=200 />
+      imageElement = <img src={pageData.image} width="200" />
     }
 
     return (
