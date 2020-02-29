@@ -98,7 +98,7 @@ In class, we completed these exercises:
 
 1. Add an input for birthday, and display it.
 2. Add a third input.
-3. **Challenge**: Display "happy birthday" if it's the birthday is today!
+3. **Challenge**: Display "happy birthday" if the birthday is today!
 
 #### Homework 2
 
