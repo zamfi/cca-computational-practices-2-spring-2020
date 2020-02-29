@@ -88,96 +88,25 @@ This week's homework is to continue the exercises from class:
 
 Submit your homework by exporting your project to GitHub by clicking on the GitHub icon (Octocat thing), then [emailing us](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) both a link to your GitHub repository and a link to your published CodeSandbox.
 
-<!--
-
 [Here's a solution to buttons question that uses arrays](cyoa-buttons.js)
-
--->
-
-<!--
 
 ### Week 2
 
-This week, we'll look at inputs: how do you actually collect data from a user? Let's start with this code:
+This week, we'll look at inputs: how do you actually collect information from a user? Let's start with [this code](cyoa-inputs.js).
 
-```javascript
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+In class, we completed these exercises:
 
-import "./styles.css";
+1. Add an input for birthday, and display it.
+2. Add a third input.
+3. **Challenge**: Display "happy birthday" if it's the birthday is today!
 
-var pages = {
-  name: {
-    content: (name, changeName) => (
-      <p>
-        Greetings, traveler! What is your name?
-        <br />
-        <input type="text" value={name} onChange={changeName} />
-      </p>
-    ),
-    buttons: [{ label: "Continue...", page: "start" }]
-  },
-  start: {
-    content: (name, changeName) => (
-      <p>Welcome, {name}! How would you like to get to your destination?</p>
-    ),
-    buttons: [
-      { label: "Train", page: "onthetrain" },
-      { label: "Ship", page: "ontheship" }
-    ]
-  },
-  onthetrain: {
-    content: () => (
-      <p>
-        Welcome aboard the choo-choo train! Please make your way to your seat.
-        What's the number?
-      </p>
-    ),
-    buttons: [
-      { label: "12E", page: "death" }, 
-      { label: "97C", page: "life" }
-    ]
-  }
-};
+For homework, create a set of [mad libs](https://en.wikipedia.org/wiki/Mad_Libs) -- like your previous choose-your-own-adventure, the first several pages in your mad lib should collect words or other input from viewers, and then the last page should insert those words into a funny paragraph! 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+That's it. Have fun with this!
 
-    this.state = {
-      page: "name"
-    };
-  }
+Don't forget to [email us both](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) your code in GitHub and a link to your CodeSandbox.
 
-  goToPage(pageName) {
-    this.setState({
-      page: pageName
-    });
-  }
-
-  render() {
-    var pageData = pages[this.state.page];
-
-    var buttons = pageData.buttons.map(buttonData => (
-      <button onClick={() => this.goToPage(buttonData.page)}>
-        {buttonData.label}
-      </button>
-    ));
-
-    return (
-      <div className="App">
-        {pageData.content(this.state.name, event =>
-          this.setState({ name: event.target.value })
-        )}
-        {buttons}
-      </div>
-    );
-  }
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-```
+<!--
 
 ### Week 3
 
