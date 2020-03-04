@@ -64,7 +64,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        {pageData.content((dataName) => this.state[dataName], (name, value) => this.setData(name, value))}
+        {pageData.content((dataName) => this.state[dataName] || "", (name, value) => this.setData(name, value))}
         {pageData.buttons.map(buttonInfo => (
           <button onClick={() => this.goToPage(buttonInfo.page)}>
             {buttonInfo.label}
