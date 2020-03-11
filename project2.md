@@ -110,14 +110,15 @@ That's it. Have fun with this!
 
 Don't forget to [email us both](mailto:zamfi@cca.edu,rolf.widenfelt@cca.edu) your code in GitHub and a link to your CodeSandbox.
 
-<!--
-
 ### Week 3
 
 Yet another version of choose your own adventure! This time, we created a new class for each page. Because making a JSON object was getting ridiculous.
 
-[Here it is!](cyoa-pages.js)
+[Here it is!](cyoa-components.js)
 
+No homework this week, except to prepare for next week's command line-heavy class by following along to [these](https://youtu.be/5XgBd6rjuDQ) [two](https://youtu.be/-Vl4rpZVA6I) videos. Feel free to use Terminal if you're on a Mac, but use [this web-based terminal](https://bellard.org/jslinux/vm.html?url=buildroot-x86.cfg) if you're on Windows!
+
+<!--
 Make the following changes to that code:
 
 1. Use `<input>` element, instead of buttons, to record the seat number on the `TrainPage` page.
@@ -136,39 +137,25 @@ Make the following changes to that code:
 3. Add a page later in your narrative whose content depends on seat choice. E.g., if it's an even or odd number!
 
 4. Use data from a Weather API to influence the outcome of a page. For exmple, if it's snowy in Fargo, ND -- maybe your train gets stuck in a snowstorm?
-
+-->
 
 ### Week 4
 
-This week, we'll get your code off of codesandbox.io.
+This week, we'll get your code off of codesandbox.io and running in a publicly-accessible place on the web.
 
-We'll be using the command line a lot this week. While the installs are happening, take a look at this [list of terminal commands](https://files.fosswire.com/2007/08/fwunixref.pdf).
+We'll be using the command line a lot this week. While the installs are happening, take a quick look at this [list of terminal commands](https://files.fosswire.com/2007/08/fwunixref.pdf) to refresh you memory.
 
 Preparation:
 
-1. Make sure you have `git` installed in your command line tools. Open a terminal and type `git`. If you get an error, install `git`!
+1. Create a GitHub repository for your latest code. In codesandbox.io, click the GitHub icon on the left, give your repository a name, and save it.
 
-2. Make sure you have `node` and `npm` installed. You can download these from the [Node.js website](http://nodejs.org). Make sure the `node` command opens a prompt on your terminal.
-
-So, with those out of the way, let's get your code running on a local server on your computer:
-
-1. Create a GitHub repository for your latest code. Click the GitHub icon on the left, give your repository a name, and save it.
-
-2. Visit the GitHub repository for your project. You should see a "clone or download" button, copy that link.
-
-3. Open a terminal, and `cd` into a new directory that will include your project. 
-
-4. Type `git clone ` and then paste in the link you copied in the previous step. Then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`. Use `ls` to show you the contents of the folder you're in!
-
-5. Run `npm install` -- this will install all the libraries that your project depends on, including react and some other stuff.
-
-6. Run `npm start` -- this will start your project, and open a browser window pointed at the node server that's running your code!
+2. Visit the GitHub repository for your project. You should see a "clone or download" button, copy that link and save it somewhere on your computer so you can refer to it later!
 
 #### Using Google Cloud Platform
 
-Of course the above only runs your code for as long as your laptop is open, and only allows connections from the local wifi network. To get your code running on the web permanently, we can use Google Cloud Platform.
+Most modern laptops are capable of running your code as-is -- but of course, that only works as long as your laptop is open, and only allows connections from the local wifi network. To get your code running on the web permanently, we can use Google Cloud Platform!
 
-Sign up for a [Google Cloud Platform account](https://console.cloud.google.com/). You'll need to enter a credit card to prove you're human, but you won't be charged.
+Sign up for a [Google Cloud Platform account](https://console.cloud.google.com/). You'll need to enter a credit card to prove you're human, but you won't be charged if you follow these directions correctly!
 
 Create a new project, then navigate to `Compute Engine` > `VM Instances` and create a new VM. You'll want to use these settings to make sure it's free! Pick your own name, though, obviously. (You may need to create a "project" for this.)
 
@@ -186,13 +173,19 @@ Start with this:
 sudo apt-get install git nodejs npm
 ```
 
-This will install git, node, and npm on your remote server.
+This will install git, node, and npm on your remote server, allowing you to clone your code, and run the node server. Do so by following these steps:
 
-Then, follow steps 4-6 again from the instructions above! Finally, you'll need to get your IP address from the dashboard, something like 35.247.65.57, and then visit `35.247.65.57:3000` in your browser, replacing `35.247.65.57` with the IP address that you actually have.
+1. Type `git clone ` and then paste in the link you copied earlier to your repository. Then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`. Use `ls` to show you the contents of the folder you're in!
+
+2. Run `npm install` -- this will install all the libraries that your project depends on, including react and some other stuff.
+
+3. Run `npm start` -- this will start your project, and open a browser window pointed at the node server that's running your code!
+
+Lastly, you'll need to get your IP address from the GCP dashboard, something like 35.247.65.57, and then visit `35.247.65.57:3000` in your browser, replacing `35.247.65.57` with the IP address that you actually have.
 
 That `:3000` tells your server to connect to the program running on *port 3000*, which happens to be the port that React is using.
 
-#### Running permanently
+#### Running Permanently
 
 You may have noticed that closing the SSH window eventually stops your server from responding. That's because once the terminal running your server shuts down, your server shuts down with it.
 
@@ -205,9 +198,8 @@ Now, close your terminal and you should be golden! Server should still be up and
 Your homework for this week is as follows:
 
 1. Get your server up and running permanently. Send me a link to the IP address and port!
-2. Make your choose your own adventure game beautiful and functional! This is the last week we'll spend working on it, so ge something you're proud of!
+2. Make your choose your own adventure game beautiful and functional! This is the last week we'll spend working on it, so make something you're proud of!
 3. **Optional Challenge:** Use a server like `nginx`, which you can install with `sudo apt install nginx`, to run your server without needing to specify a port number (like 3000). You are basically trying [to do this](https://stackoverflow.com/questions/24861311/forwarding-port-80-to-8080-using-nginx).
-4. **Optional Challenge**: Register a domain name and point it to your IP address. WIth 3 and 4 done, you'll have a fully functioning website running your app!
+4. **Optional Challenge**: Register a domain name and point it to your IP address. With 3 and 4 done, you'll have a fully functioning website running your app!
 
-Don't forget to also add to your project decompositions list your render- and data-focused decomposition of a computer or video game!4
--->
+Don't forget to also add to your project decompositions list your render- and data-focused decomposition of a computer or video game!
