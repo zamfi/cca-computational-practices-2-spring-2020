@@ -149,7 +149,7 @@ Preparation:
 
 1. Create a GitHub repository for your latest code. In codesandbox.io, click the GitHub icon on the left, give your repository a name, and save it.
 
-2. Visit the GitHub repository for your project. You should see a "clone or download" button, copy that link and save it somewhere on your computer so you can refer to it later!
+2. Visit the GitHub repository for your project. You should see a "clone or download" button, click on `https` and copy that link. Save it somewhere on your computer so you can refer to it later!
 
 #### Using Google Cloud Platform
 
@@ -158,10 +158,11 @@ Most modern laptops are capable of running your code as-is -- but of course, tha
 Sign up for a [Google Cloud Platform account](https://console.cloud.google.com/). You'll need to enter a credit card to prove you're human, but you won't be charged if you follow these directions correctly!
 
 Create a new project, then navigate to `Compute Engine` > `VM Instances` and create a new VM. You'll want to use these settings to make sure it's free! Pick your own name, though, obviously. (You may need to create a "project" for this.)
+Note: Under the `Boot disk` choice, make sure you change to Linux 10, not Linux 9.
 
 ![creating an instance](img/creating-an-instance.png)
 
-Once you've created your instance, you'll need to open a specific `port` to allow our development server to be publicly accessible on the internet. To do that, navigate to `VPC Network` > `Firewall Rules` and click on `Create Firewall Rule`. Use these settings:
+Once you've created your instance, you'll need to open a specific `port` to allow our development server to be publicly accessible on the internet. To do that, navigate to `VPC Network` > `Firewall Rules` and click on `Create Firewall Rule`. (**Note:** this section is a bit hard to find. Click on `Google Cloud Platform` icon in the upper left, and scroll down until you see `VPC Network`.) Use these settings:
 
 ![new firewall rule](img/create-firewall-rule.png)
 
@@ -175,7 +176,7 @@ sudo apt-get install git nodejs npm
 
 This will install git, node, and npm on your remote server, allowing you to clone your code, and run the node server. Do so by following these steps:
 
-1. Type `git clone ` and then paste in the link you copied earlier to your repository. Then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`. Use `ls` to show you the contents of the folder you're in!
+1. Type `git clone ` followed by a space. Then find the `https` link you copied earlier to your repository. Paste it in and then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`. Use `ls` to show you the contents of the folder you're in!
 
 2. Run `npm install` -- this will install all the libraries that your project depends on, including react and some other stuff.
 
