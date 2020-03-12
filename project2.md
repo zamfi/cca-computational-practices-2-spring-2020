@@ -178,7 +178,7 @@ sudo apt-get install git nodejs npm
 
 This will install git, node, and npm on your remote server, allowing you to clone your code, and run the node server. Do so by following these steps:
 
-1. Type `git clone ` followed by a space. Then find the `https` link you copied earlier to your repository. Paste it in and then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`. Use `ls` to show you the contents of the folder you're in!
+1. Type `git clone ` followed by a space. Then find the `https` link you copied earlier to your repository. Paste it in and then hit return. This will copy your code into the folder you're in. Then `cd` into the folder created by `git clone`; if your repository is called `cyoa-repo`, you'll want to use `cd cyoa-repo` to enter that folder. Use `ls` to show you the contents of the folder you're in!
 
 2. Run `npm install` -- this will install all the libraries that your project depends on, including react and some other stuff.
 
