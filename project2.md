@@ -162,7 +162,9 @@ Note: Under the `Boot disk` choice, make sure you change to Linux 10, not Linux 
 
 ![creating an instance](img/creating-an-instance.png)
 
-Once you've created your instance, you'll need to open a specific `port` to allow our development server to be publicly accessible on the internet. To do that, navigate to `VPC Network` > `Firewall Rules` and click on `Create Firewall Rule`. (**Note:** this section is a bit hard to find. Click on `Google Cloud Platform` icon in the upper left, and scroll down until you see `VPC Network`.) Use these settings:
+Once you've created your instance, you'll need to open a specific `port` to allow our development server to be publicly accessible on the internet. To do that, navigate to `VPC Network` > `Firewall Rules` and click on `Create Firewall Rule`.
+**Note:** this section is a bit hard to find. Click on `Google Cloud Platform` icon in the upper left, and scroll down until you see `VPC Network`.
+Use these settings:
 
 ![new firewall rule](img/create-firewall-rule.png)
 
