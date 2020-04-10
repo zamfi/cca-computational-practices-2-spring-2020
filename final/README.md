@@ -1,8 +1,8 @@
 #### Final Project
 
-Assignment 1: Due April 12, 2019
+Assignment 1: Project Proposal due April 15, 2020
 
-Prepare a proposal for your final project. If you're not sure what you want to do, [email me](mailto:zamfi@cca.edu) a few thoughts and I'm happy to send you my opinions on what would make a good project.
+Prepare a proposal for your final project. If you have questions, [email us](mailto:zamfi@cca.edu;rolf.widenfelt@cca.edu) or post a note on Slack.
 
 Some examples of past final projects:
 
@@ -13,6 +13,8 @@ Some examples of past final projects:
 - Piano player: molded plastic fingers, connected to servo motors with strings, that pull the fingers down to play an electric keyboard. Reads the MIDI format and plays music!
 - SensorBot: a wall-detecting robot that follows the walls in a room, measuring distance and light level as it goes.
 - Wall Drawbot: a wall-mounted pen controlled by an Arduino that can draw an arbitrary drawing, perhaps from an SVG file.
+
+**Note:** we understand that in the current circumstances, physical fabrication will be difficult or impossible. Digital projects are encouraged.
 
 **Assignment**: Create a new github repository for your final project, and modify the README.md file to include your project proposal. To learn about formatting text in markdown `.md` files, read [this tutorial](https://help.github.com/articles/markdown-basics/) and look at the [project proposal template](project-template.md).
 
