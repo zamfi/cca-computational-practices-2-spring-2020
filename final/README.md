@@ -14,7 +14,7 @@ Some examples of past final projects:
 - SensorBot: a wall-detecting robot that follows the walls in a room, measuring distance and light level as it goes.
 - Wall Drawbot: a wall-mounted pen controlled by an Arduino that can draw an arbitrary drawing, perhaps from an SVG file.
 
-**Note:** we understand that in the current circumstances, physical fabrication will be difficult or impossible. Digital projects are encouraged.
+**Note:** We understand that in the current circumstances, physical fabrication will be difficult or impossible. Digital projects are encouraged.
 
 **Assignment**: Create a new github repository for your final project, and modify the README.md file to include your project proposal. To learn about formatting text in markdown `.md` files, read [this tutorial](https://help.github.com/articles/markdown-basics/) and look at the [project proposal template](project-template.md).
 
